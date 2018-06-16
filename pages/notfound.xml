@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page home="true">
+	<title>Page not found</title>
+
+	<layout>
+		<section title="Page not found">
+			<markdown>
+Well, that's embarrassing.
+
+The page you or your web crawler were looking for doesn't seem to exist. Bummer.
+
+...
+
+So, I guess you should go back [home](?p=index).
+			</markdown>
+		</section>
+	</layout>
+</page>

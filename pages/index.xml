@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page home="true">
+	<title></title>
+
+	<links>
+		<link type="page" target="autoit">AutoIt</link>
+		<link type="page" target="fanprojects">Fan projects</link>
+		<link type="external" target="https://twitter.com/scintilla4evr" style="twitter">@scintilla4evr</link>
+		<link type="external" target="https://github.com/scintilla4evr" style="download">GitHub</link>
+	</links>
+
+	<layout>
+		<section title="AutoIt apps and UDFs" id="autoit">
+			<markdown>
+Pretty self-explanatory.
+			</markdown>
+			<carousel>
+				<link type="external" target="https://www.autoitscript.com/forum/topic/170658-advanced-math-udf/">Advanced Math UDF</link>
+				<link type="external" target="https://www.autoitscript.com/forum/topic/191320-compileit-an-experimental-autoit-to-machine-code-compiler/">CompileIt</link>
+				<link type="external" target="https://www.autoitscript.com/forum/topic/183506-motion-graphics-udf/">Motion Graphics UDF</link>
+			</carousel>
+		</section>
+
+		<section title="Fan projects" id="fanprojects">
+			<markdown>
+Every once in a while, I create stuff related to things I like.
+			</markdown>
+			<carousel>
+				<link type="internal" target="gtlive.gtltc" img="shared/tea.png">GTLive Tea Club</link>
+				<link type="external" target="widinartgenerator/" img="widinartgenerator/blank.svg">Chris Widin's art generator</link>
+				<link type="external" target="https://github.com/scintilla4evr/projectlatepat">Project LatePat</link>
+			</carousel>
+		</section>
+	</layout>
+</page>
