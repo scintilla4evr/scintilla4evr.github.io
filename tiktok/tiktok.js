@@ -49,11 +49,6 @@ function startTikTok() {
 		
 		playAudio(avIndex)
 		vid.play()
-		
-		// Play all videos
-		sub.querySelectorAll("video").forEach(vid => {
-			if (vid.currentTime < vid.duration) vid.play()
-		})
 	}
 	
 	index++
