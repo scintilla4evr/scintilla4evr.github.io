@@ -11,11 +11,11 @@ body {
 
 main {
 	position: fixed;
-	top: 0;
+	top: 50%;
 	left: 50%;
 	width: 98.5vmin;
 	height: 100vmin;
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 }
 
 main > div {
