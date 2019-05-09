@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<input>
-		<button>submit</button>
-		
-		<script src="sha256.min.js"></script>
-		<script>
-			document.querySelector("button").addEventListener("click", function() {
-				// no snooping here, dahlings!
-				if (sha256(document.querySelector("input").value) === "17122fccbbb0ee88470918894acaf0786cbe22b195a78c8c4beff8840e1ec1fd") {
-					alert("gratz! u solved the cake mystery! yay! [" + document.querySelector("input").value + "]!!! send a screenshot to #just-a-theory!!");
-				}
-			});
-		</script>
-	</body>
+    <head>
+        <title>hello_world.tea</title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                background: rgb(20, 22, 24);
+                color: rgb(199, 211, 224);
+                font-family: "Segoe UI", "Helvetica Neue", "Roboto", sans-serif;
+            }
+
+            header {
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                height: 32px;
+                background: rgb(31, 34, 37);
+                box-shadow: 0px 0px 8px #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            header p {
+                margin: 0;
+            }
+
+            main {
+                position: fixed;
+                left: 0;
+                top: 32px;
+                right: 0;
+                bottom: 0;
+                font-family: "Consolas", monospace;
+                padding: 8px 32px;
+                overflow-y: auto;
+            }
+
+            span.comment {
+                color: rgb(117, 172, 66);
+            }
+
+            span.keyword {
+                color: rgb(56, 173, 228);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>hello_world.tea</p>
+        </header>
+        <main>
+            <span class="keyword">drama</span> addMoreOomph(x) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">spill</span> x^2 - 1;<br>
+            }<br>
+            <br>
+            <span class="keyword">drama</span> sohCahToaButNotReally(number1, number2) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">spill</span> number1 * number2;<br>
+            }<br>
+            <br>
+            <span class="keyword">drama</span> divideByZeroBecauseWhyNot() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">spill</span> 1 / 0;<br>
+            }<br>
+            <br>
+            <span class="keyword">tea</span> a = 4, b = 10, c = 52;<br>
+            <span class="keyword">tea</span> answer = -100;<br>
+            <br>
+            <span class="comment">🍵 give me the answer, i'm bored</span><br>
+            answer = answer + addMoreOomph(a + b);<br>
+            answer = answer + sohCahToaButNotReally(b, c);
+        </main>
+    </body>
 </html>
