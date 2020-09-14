@@ -1,0 +1,20 @@
+:root {
+    --var-accent: #dfff2c !important;
+    --var-bg: #121214 !important;
+    --var-fg: #fff !important;
+}
+
+body {
+    background: url("hero.jpg") center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+
+@media (max-width: 1024px) {
+    body > header {
+        background: url("hero.jpg") center center !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+    }
+}

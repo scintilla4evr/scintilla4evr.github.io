@@ -1,0 +1,256 @@
+@font-face {
+    src: url("Lineal.otf");
+    font-family: "Lineal";
+}
+
+@font-face {
+    src: url("Karrik-Regular.woff2");
+    font-family: "Karrik";
+}
+
+:root {
+    --var-accent: #f00;
+    --var-bg: #000;
+    --var-fg: #fff;
+}
+
+body {
+    font-family: "Karrik";
+
+    margin: 0;
+}
+
+canvas {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+body > header {
+    position: fixed;
+    left: 0;
+    top: -40px;
+    bottom: 0;
+
+    color: var(--var-accent);
+
+    padding: 0px 32px;
+
+    h1 {
+        font-size: 256pt;
+        font-family: "Lineal";
+        font-weight: 400;
+        line-height: 0.75;
+
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 24pt;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: right;
+
+        padding: 0px 12px;
+
+        margin: 0;
+    }
+
+    nav {
+        max-width: 340px;
+        box-sizing: border-box;
+
+        text-align: right;
+
+        margin-top: 24px;
+        padding: 0px 12px;
+
+        div:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        a {
+            background: var(--var-bg);
+            color: var(--var-accent);
+
+            font-size: 18pt;
+            white-space: nowrap;
+        }
+    }
+}
+
+body > main {
+    margin-left: 404px;
+
+    section {
+        background: var(--var-bg);
+        color: var(--var-fg);
+
+        display: block;
+
+        &.hero {
+            height: 100vh;
+
+            background: transparent;
+        }
+    }
+
+    header {
+        background: var(--var-accent);
+        color: var(--var-bg);
+
+        font-family: "Lineal";
+        font-size: 24pt;
+        letter-spacing: 0.4em;
+        text-align: center;
+    }
+
+    & > footer {
+        height: 100vh;
+
+        background: transparent;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            background: var(--var-bg);
+            color: var(--var-accent);
+
+            font-size: 30pt;
+        }
+    }
+}
+
+section.article, article {
+    padding: 24px 32px;
+
+    h1 {
+        font-family: "Lineal";
+        font-weight: 400;
+        font-size: 72pt;
+        
+        margin: 0px 0px 24px 0px;
+    }
+
+    p {
+        max-width: 700px;
+
+        font-size: 18pt;
+        text-align: justify;
+    }
+}
+
+section.pack {
+    padding: 24px 32px;
+
+    display: flex;
+
+    img {
+        width: 192px;
+        height: 192px;
+    }
+
+    div {
+        margin-left: 32px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h1 {
+            font-family: "Lineal";
+            font-weight: 400;
+            font-size: 32pt;
+            text-transform: uppercase;
+            
+            margin: 0px 0px 16px 0px;
+        }
+
+        p {
+            max-width: 700px;
+    
+            font-size: 18pt;
+            text-align: justify;
+
+            margin: 8px 0px;
+        }
+
+        a {
+            background: var(--var-accent);
+            color: var(--var-bg);
+
+            font-size: 18pt;
+            white-space: nowrap;
+
+            margin: 10px 0px;
+            padding: 8px 20px;
+
+            display: inline-block;
+        }
+    }
+}
+
+section.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    a {
+        font-size: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    body > main {
+        margin-left: 0px;
+    }
+
+    body > header {
+        top: 0px;
+        right: 0px;
+        bottom: unset;
+
+        display: flex;
+
+        h1 {
+            font-size: 32pt;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+    
+    section.article, article {
+        h1 {
+            font-size: 40pt;
+        }
+    }
+
+    section.pack {
+        flex-direction: column;
+
+        div {
+            margin-left: 0;
+            margin-top: 16px;
+        }
+    }
+}

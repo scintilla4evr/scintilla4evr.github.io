@@ -1,0 +1,203 @@
+@font-face {
+  src: url("Lineal.otf");
+  font-family: "Lineal";
+}
+@font-face {
+  src: url("Karrik-Regular.woff2");
+  font-family: "Karrik";
+}
+:root {
+  --var-accent: #f00;
+  --var-bg: #000;
+  --var-fg: #fff;
+}
+
+body {
+  font-family: "Karrik";
+  margin: 0;
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+body > header {
+  position: fixed;
+  left: 0;
+  top: -40px;
+  bottom: 0;
+  color: var(--var-accent);
+  padding: 0px 32px;
+}
+body > header h1 {
+  font-size: 256pt;
+  font-family: "Lineal";
+  font-weight: 400;
+  line-height: 0.75;
+  margin: 0;
+}
+body > header h2 {
+  font-size: 24pt;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 0px 12px;
+  margin: 0;
+}
+body > header nav {
+  max-width: 340px;
+  box-sizing: border-box;
+  text-align: right;
+  margin-top: 24px;
+  padding: 0px 12px;
+}
+body > header nav div:not(:last-child) {
+  margin-bottom: 8px;
+}
+body > header nav a {
+  background: var(--var-bg);
+  color: var(--var-accent);
+  font-size: 18pt;
+  white-space: nowrap;
+}
+
+body > main {
+  margin-left: 404px;
+}
+body > main section {
+  background: var(--var-bg);
+  color: var(--var-fg);
+  display: block;
+}
+body > main section.hero {
+  height: 100vh;
+  background: transparent;
+}
+body > main header {
+  background: var(--var-accent);
+  color: var(--var-bg);
+  font-family: "Lineal";
+  font-size: 24pt;
+  letter-spacing: 0.4em;
+  text-align: center;
+}
+body > main > footer {
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body > main > footer a {
+  background: var(--var-bg);
+  color: var(--var-accent);
+  font-size: 30pt;
+}
+
+section.article, article {
+  padding: 24px 32px;
+}
+section.article h1, article h1 {
+  font-family: "Lineal";
+  font-weight: 400;
+  font-size: 72pt;
+  margin: 0px 0px 24px 0px;
+}
+section.article p, article p {
+  max-width: 700px;
+  font-size: 18pt;
+  text-align: justify;
+}
+
+section.pack {
+  padding: 24px 32px;
+  display: flex;
+}
+section.pack img {
+  width: 192px;
+  height: 192px;
+}
+section.pack div {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+section.pack div h1 {
+  font-family: "Lineal";
+  font-weight: 400;
+  font-size: 32pt;
+  text-transform: uppercase;
+  margin: 0px 0px 16px 0px;
+}
+section.pack div p {
+  max-width: 700px;
+  font-size: 18pt;
+  text-align: justify;
+  margin: 8px 0px;
+}
+section.pack div a {
+  background: var(--var-accent);
+  color: var(--var-bg);
+  font-size: 18pt;
+  white-space: nowrap;
+  margin: 10px 0px;
+  padding: 8px 20px;
+  display: inline-block;
+}
+
+section.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+section.gallery a {
+  font-size: 0;
+}
+section.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  body > main {
+    margin-left: 0px;
+  }
+
+  body > header {
+    top: 0px;
+    right: 0px;
+    bottom: unset;
+    display: flex;
+  }
+  body > header h1 {
+    font-size: 32pt;
+  }
+  body > header h2 {
+    margin: 0;
+  }
+  body > header nav {
+    display: none;
+  }
+
+  section.article h1, article h1 {
+    font-size: 40pt;
+  }
+
+  section.pack {
+    flex-direction: column;
+  }
+  section.pack div {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
