@@ -17,6 +17,6 @@
             Math.abs(e.accelerationIncludingGravity.z + 9.81) / 9.81, 1
         )
 
-        obscure.style.opacity = window.tilt
+        obscure.style.opacity = 0
     })
 })()
