@@ -8,6 +8,11 @@
     font-family: "Karrik";
 }
 
+@font-face {
+    src: url("Optician-Sans.woff");
+    font-family: "Optician Sans";
+}
+
 :root {
     --var-accent: #f00;
     --var-bg: #000;
@@ -18,6 +23,19 @@ body {
     font-family: "Karrik";
 
     margin: 0;
+}
+
+div.obscure {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: -9;
 }
 
 canvas {
@@ -102,13 +120,13 @@ body > main {
     }
 
     header {
-        background: var(--var-accent);
-        color: var(--var-bg);
+        background: var(--var-bg);
+        color: var(--var-accent);
 
         font-family: "Lineal";
         font-size: 24pt;
-        letter-spacing: 0.4em;
-        text-align: center;
+        
+        padding: 24px 32px 0px 32px;
     }
 
     & > footer {
@@ -134,11 +152,12 @@ section.article, article {
     padding: 24px 32px;
 
     h1 {
-        font-family: "Lineal";
+        font-family: "Optician Sans";
         font-weight: 400;
         font-size: 72pt;
+        line-height: 0.8;
         
-        margin: 0px 0px 24px 0px;
+        margin: 0px 0px 0px 0px;
     }
 
     p {
@@ -146,6 +165,8 @@ section.article, article {
 
         font-size: 18pt;
         text-align: justify;
+
+        margin: 16px 0px;
     }
 }
 
@@ -168,12 +189,13 @@ section.pack {
         align-items: flex-start;
 
         h1 {
-            font-family: "Lineal";
+            font-family: "Optician Sans";
             font-weight: 400;
             font-size: 32pt;
+            line-height: 0.9;
             text-transform: uppercase;
             
-            margin: 0px 0px 16px 0px;
+            margin: 0px;
         }
 
         p {

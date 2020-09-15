@@ -8,19 +8,21 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height)
 
         ctx.strokeStyle = "#dfff2c"
+        ctx.lineWidth = 2
 
         ctx.beginPath()
 
         const time = t / 1000
 
         for (let i = 1; i < 20; i++) {
-            const r = (i / 20) * Math.max(canvas.width, canvas.height) / 2
+            const r = Math.abs(150 * Math.sin(i + time))
 
             ctx.arc(
-                canvas.width / 2, canvas.height / 2,
+                canvas.width / 2 + Math.sin(time ** 1.1 + i)**3 * 450,
+                canvas.height / 2 + Math.cos(time ** 0.1 + i)**3 * 450,
                 r,
                 time + i,
-                2 * time - i
+                time / i
             )
         }
 
