@@ -15,10 +15,10 @@
         const time = t / 1000
 
         for (let i = 1; i < 20; i++) {
-            const r = Math.abs(150 * Math.sin(i + time))
+            const r = Math.abs(150 * Math.sin(i + time)) + fun * 200
 
             ctx.arc(
-                canvas.width / 2 + Math.sin(time ** 1.1 + i)**3 * 450,
+                canvas.width / 2 + Math.sin(time ** 1.1 + i)**3 * 450 * (1 - fun),
                 canvas.height / 2 + Math.cos(time ** 0.1 + i)**3 * 450,
                 r,
                 time + i,

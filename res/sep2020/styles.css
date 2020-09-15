@@ -10,6 +10,11 @@ body {
     background-attachment: fixed !important;
 }
 
+div.obscure {
+    background: url("obscure.jpg") center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
 
 @media (max-width: 1024px) {
     body > header {

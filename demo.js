@@ -9,4 +9,10 @@
         canvas.width = innerWidth;
         canvas.height = innerHeight;
     })
+
+    window.addEventListener("scroll", (e) => {
+        window.fun = scrollY / (document.documentElement.scrollHeight - innerHeight)
+
+        obscure.style.opacity = window.fun
+    })
 })()
