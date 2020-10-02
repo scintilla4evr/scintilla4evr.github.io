@@ -21,6 +21,16 @@ body {
   margin: 0;
 }
 
+div.bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -30;
+}
+
 div.obscure {
   position: fixed;
   left: 0;
@@ -118,6 +128,9 @@ body > main > footer a {
 section.article, article {
   padding: 24px 32px;
 }
+section.article a, article a {
+  color: var(--var-accent);
+}
 section.article h1, article h1 {
   font-family: "Optician Sans";
   font-weight: 400;
@@ -135,10 +148,10 @@ section.article p, article p {
 section.pack {
   padding: 24px 32px;
   display: flex;
+  align-items: center;
 }
 section.pack img {
   width: 192px;
-  height: 192px;
 }
 section.pack div {
   margin-left: 32px;

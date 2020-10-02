@@ -25,6 +25,17 @@ body {
     margin: 0;
 }
 
+div.bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+
+    z-index: -30;
+}
+
 div.obscure {
     position: fixed;
     left: 0;
@@ -151,6 +162,10 @@ body > main {
 section.article, article {
     padding: 24px 32px;
 
+    a {
+        color: var(--var-accent);
+    }
+
     h1 {
         font-family: "Optician Sans";
         font-weight: 400;
@@ -174,10 +189,10 @@ section.pack {
     padding: 24px 32px;
 
     display: flex;
+    align-items: center;
 
     img {
         width: 192px;
-        height: 192px;
     }
 
     div {

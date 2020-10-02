@@ -1,0 +1,29 @@
+:root {
+    --var-accent: #0ff !important;
+    --var-bg: #000 !important;
+    --var-fg: #fff !important;
+}
+
+body, div.bg {
+    background: url("hero.jpg") center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+canvas {
+    mix-blend-mode: multiply;
+}
+
+div.obscure {
+    background: url("obscure.jpg") center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+@media (max-width: 1024px) {
+    body > header {
+        background: url("hero.jpg") center center !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+    }
+}
